@@ -5,11 +5,24 @@
 
        Enter username: <input type="text" id="username">;
        Enter Password: <input type="password" id="password">
+      <input type="checkbox" id="shwpwd" onchange="change()"> Show Password 
+
        <button onclick="login()">Login</button>
 
 </form>
 
 <script>
+
+    function change(){
+        var checkBox = document.getElementById("shwpwd");
+        var password = document.getElementById("password");
+        if (checkBox.checked == true){
+            password.type="text";
+        } else {
+            password.type="password"
+        }
+        
+    }
 
 function login(){
 
@@ -19,7 +32,8 @@ var password = document.getElementById("password").value;
    var dbusername="Avijit";
    var dbpassword="Devilmaycry2@"
 
-   if (username == dbusername && password ==dbpassword){
+   if (username == dbusername && password ==dbpassword)
+   {
 
        alert("login success");
    }
