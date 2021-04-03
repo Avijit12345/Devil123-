@@ -10,4 +10,4 @@ console.log(c);
 
 }
 m1();
-console.log(a);
+// console.log(a);
