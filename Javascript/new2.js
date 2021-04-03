@@ -24,5 +24,5 @@ function f3(){
 f3()
 f1();
 f2();
-console.log (a);
+ console.log (a);
     console.log (b);
