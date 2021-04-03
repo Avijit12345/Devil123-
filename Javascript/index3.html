@@ -1,0 +1,42 @@
+<html>  
+
+<head>
+
+</head>
+    <body>
+      
+        <form>
+
+   Enter username:<input type="text" id="username"> <span id="msg"></span><br><br> 
+   <button onclick="validate()">submit</button>
+
+</form>
+
+   <script>
+
+    function validate(){
+
+     var username=["ravi","kiran","mohanty"];
+      event.preventDefault();
+      var username=document.getElementById("username").value;
+      if (username.includes(username)){
+
+        alert("true")
+      }
+        else 
+        {
+            alert("false");
+        }
+      }
+
+    
+
+   </script>
+
+    </body>
+
+
+
+
+
+</html>
